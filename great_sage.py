@@ -5,7 +5,7 @@ import google.generativeai as genai
 st.title("GreatSage")
 st.write("I am a chatbot")
 
-genai.configure("API_Key")
+genai.configure("api_key")
 
 model = genai.GenerativeModel("gemini-3.8-flash")
 

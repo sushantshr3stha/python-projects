@@ -48,7 +48,7 @@ def game_logic():
         st.write(f"Bot: {bot_choice}")
         st.write(f"User: {choice}")
     elif bot_choice == "scissors" and choice == "rock":
-        st.title("Bot won")
+        st.title("User won")
         st.write(f"Bot: {bot_choice}")
         st.write(f"User: {choice}")
     elif bot_choice == "rock" and choice == "scissors":

@@ -8,7 +8,7 @@ def calculate_production_time(quantity, minutes_per_garment, workers,efficency):
     hours = actual_minutes / 60
     return hours
 
-st.write("garment production time predictor")
+st.title("Garment Production Time Predictor")
 quantity = st.number_input("Enter the quantity of garments to be produced:", min_value=1, step=1)
 minutes = st.number_input("Enter the minutes required to produce one garment:", min_value=0.1, step=0.1)
 workers = st.number_input("Enter the number of workers available:", min_value=1, step=1)

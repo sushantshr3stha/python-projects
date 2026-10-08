@@ -1,0 +1,27 @@
+[
+    {
+
+        "question": "What is the capital city of Nepal",
+        "options": ["Kathmandu", "Dharan", "Pokhara", "Biratnagar"],
+        "answer": "kathmandu"
+    },
+
+    {
+
+        "question": "What is the capital of city of India",
+        "options": ["Kathmandu", "New Delhi", "Bihar", "Mumbai"],
+        "answer": "newdelhi"
+    },
+        {
+
+        "question": "What is the capital of city of China",
+        "options": ["Tokyo", "Shanghai", "Beijing", "Seol"],
+        "answer": "beijing"
+    },
+    {
+
+        "question": "Which is the tallest mountain",
+        "options": ["Mount K2", "Mount Everest", "Kanchanjanga", "Annapurna"],
+        "answer": "mounteverest"
+    }
+]

@@ -1,9 +1,15 @@
+#this is a basic password generator
+
 import random
+import string
 
-chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqystuvwxyz0123456789@#$&._"
-pass_len = int(input("how long password do you want(8-32 characters): "))
 
-for char in chars:
-    
-    password = random.choice(chars)
+chars = string.ascii_lowercase + string.digits + string.ascii_uppercase
+pass_len = int(input("enter the length of the password: "))
+char = 0
+password =""
+
+for _ in range(pass_len):
+    password += random.choice(chars)
+
 print(password)

@@ -30,9 +30,13 @@ def square():
     sqr2 = num2*num2
     return sqr1, sqr2
 def sqrt_():
-    sqrt1 = math.sqrt(num1)
-    sqrt2 = math.sqrt(num2)
-    return sqrt1, sqrt2
+    if num1<0 or num2<0:
+        return "You Entered a negative number. Negative numbers can't have square roots"
+        
+    else:
+        sqrt1 = math.sqrt(num1)
+        sqrt2 = math.sqrt(num2)
+        return sqrt1, sqrt2
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -53,10 +57,10 @@ elif btn2:
 elif btn3:
     st.write("the multiplication of two numbers are: ", multiply())
 elif btn4:
-    st.write("the division of two numbers are: ", divide())
+    st.write("the division of two numbers is: ", divide())
 elif btn5:
-    st.write(f"the Square of {num1} and {num2} are: ", square())
+    st.write(f"the Square of {num1} and {num2} is: ", square())
 elif btn6:
-    st.write(f"the Square root of {num1} and {num2} are: ", sqrt_())
+    st.write(f"the Square root of {num1} and {num2} is: ", sqrt_())
 else:
     st.write("No operation could be performed")

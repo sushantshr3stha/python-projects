@@ -1,12 +1,11 @@
-
+from dotenv import load_dotenv
 import streamlit as st
 import google.generativeai as genai
 
 st.title("GreatSage")
 st.write("I am a chatbot")
-
+load_dotenv()
 genai.configure("api_key")
-
 model = genai.GenerativeModel("gemini-3.8-flash")
 
 user_input = st.chat_input("Enter your thoughts")
